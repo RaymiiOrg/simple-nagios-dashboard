@@ -1,8 +1,8 @@
 ### Simple Nagios Dashboard
 
-<a href="http://i.imgur.com/vlOAPfB.png"><img src="http://i.imgur.com/vlOAPfB.png" width="480" height="250" /></a>
+<a href="http://i.imgur.com/vlOAPfB.png"><img src="http://i.imgur.com/vlOAPfB.png" width="450" height="220" /></a>
 
-<a href="http://i.imgur.com/Cs6bGrL.png"><img src="http://i.imgur.com/Cs6bGrL.png" width="480" height="250" /></a>
+<a href="http://i.imgur.com/Cs6bGrL.png"><img src="http://i.imgur.com/Cs6bGrL.png" width="450" height="220" /></a>
 
 Simple Nagios Dashboard is a simple php based Nagios Dashboard. It is intended for a wall mounted monitor. It displays all host and service warnings. 
 
