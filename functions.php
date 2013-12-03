@@ -67,7 +67,7 @@ function alert_services($host, $state, $ack, $not) {
 
 function service_alert_cards($severety, $card_type, $counter, $card_data) {
     $c_count = 1;
-    print("<h2>" . $severety . "</h2>");
+    print("<h3>" . $severety . "</h3>");
     if($counter == 0) {
         print("<div class='alert alert-success'>");
         print(str_repeat("<span class='glyphicon glyphicon-thumbs-up'> </span> &nbsp; ", 2));
@@ -128,7 +128,7 @@ function alert_hosts($host, $state, $ack, $notif) {
 
 function host_alert_cards($severety, $card_type, $counter, $card_data) {
     $c_count = 1;
-    print("<h2>" . $severety . "</h2>");
+    print("<h3>" . $severety . "</h3>");
     if($counter == 0) {
         print("<div class='alert alert-success'>");
         print(str_repeat("<span class='glyphicon glyphicon-thumbs-up'> </span> &nbsp; ", 3));
