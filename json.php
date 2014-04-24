@@ -25,7 +25,8 @@
 // Change this accordingly
 $statusFile = "/opt/local/var/nagios/status.dat";
 
-$nag_version = getFileVersion($statusFile); // returns integer 2 or 3
+//$nag_version = getFileVersion($statusFile); // returns integer 2 or 3
+$nag_version = 3;
 $created_ts = 0;
 
 $debug = false;
