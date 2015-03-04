@@ -119,7 +119,7 @@ function alert_hosts($host, $state, $ack, $notif) {
 			break;
 		}		
                 $alert_json["$alert_count"]["plugin_output"] = $value["plugin_output"];
-                $alert_json["$alert_count"]["url"] = $extinfo_url . "?type=&host=" . str_replace(" ", "+", $value["host_name"]);
+                $alert_json["$alert_count"]["url"] = $extinfo_url . "?type=1&host=" . str_replace(" ", "+", $value["host_name"]);
                 $alert_count += 1;
             }
     }
