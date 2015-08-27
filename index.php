@@ -22,16 +22,6 @@ require_once("./functions.php");
     <meta name="author" content="Remy van Elst">
     <meta http-equiv="refresh" content="30">
     <link href="//netdna.bootstrapcdn.com/bootswatch/3.3.5/<?=$dashboard_theme?>/bootstrap.min.css" rel="stylesheet">
-    <style type="text/css">
-        a {
-            color: #333 !important;
-        }
-        .alert { 
-            padding:5px 13px !important;
-            border-radius: 0px !important;
-            margin-bottom: 2px !important;
-        }
-    </style>
 </head>
 <body>
     <div class="container">
@@ -89,10 +79,8 @@ require_once("./functions.php");
             </div>
         </div>
         <br />
-        <div class="row">
-            <div class="container text-center">
+        <div class="row text-center">
                 <span>Simple Nagios Dashboard by <a href="https://raymii.org">Remy van Elst (code)</a> and <a href="https://github.com/JobV">Job van der Voort (design)</a>.</span>
-            </div>
         </div>
 
     </div>
