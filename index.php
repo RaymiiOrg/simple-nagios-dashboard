@@ -21,7 +21,7 @@ require_once("./functions.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Remy van Elst">
     <meta http-equiv="refresh" content="30">
-    <link href="//netdna.bootstrapcdn.com/bootswatch/3.0.2/united/bootstrap.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/bootswatch/3.3.5/<?=$dashboard_theme?>/bootstrap.min.css" rel="stylesheet">
     <style type="text/css">
         a {
             color: #333 !important;
