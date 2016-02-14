@@ -167,13 +167,22 @@ $warnings_ack_issues = array_merge($warnings_ackn, $warnings_not);
 $warnings_ack_count = count($warnings_ack_issues);
 
 
-$criticals = alert_services($host, 2, 0, 1);
+$criticals_raw = alert_services($host, 2, 0, 1);
+$criticals = $criticals_raw;
+foreach ($host_ack_issues as $host_ack_issues_key => $host_ack_issues_value) {
+    foreach ($criticals as $criticals_key => $criticals_value) {
+        if($criticals_value['host_name'] == $host_ack_issues_value['host_name']) {
+            unset($criticals[$criticals_key]);
+        }
+    }
+}
+$criticals_on_ack_hosts=array_diff_key($criticals_raw, $criticals);
 $criticals_count = count($criticals);
 
 $criticals_ackn = alert_services($host, 2, 1, 1);
 $criticals_not = alert_services($host, 2, 0, 0);
 
-$criticals_ack = array_merge($criticals_ackn, $criticals_not);
+$criticals_ack = array_merge($criticals_ackn, $criticals_not, $criticals_on_ack_hosts);
 $criticals_ack_count = count($criticals_ack);
 
 ?>
